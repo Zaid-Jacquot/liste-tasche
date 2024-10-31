@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <title>ToDoList</title>
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex h-screen">
+
+        <!--Sidebar-->
+
+        <aside class="w-64 bg-white p-6 border-r">
+            <h2 class="text-lg font-bold mb-4">Private</h2>
+            <ul>
+                <li class="flex items-center justify-between mb-2 text-gray-600">
+                    <span>Home</span>
+                    <span class="text-xs text-gray-400 bg-gray-100 rounded-full px-2">8</span>
+                </li>
+
+                <li class="flex items-center justify-between mb-2 text-gray-600">
+                    <span>Completed</span>
+                    <span class="text-xs text-gray-400 bg-gray-100 rounded-full px-2">16</span>
+                </li>
+
+                <li class="flex items-center justify-between mb-2 text-gray-600">
+                    <span>Personnal</span>
+                    <span class="text-xs text-gray-400 bg-gray-100 rounded-full px-2">4</span>
+                </li>
+
+                <li class="flex items-center justify-between mb-2 text-gray-600">
+                    <span>Work</span>
+                    <span class="text-xs text-gray-400 bg-gray-100 rounded-full px-2">6</span>
+                </li>
+
+                <li class="flex items-center justify-between mb-2 text-gray-600">
+                    <span>Diet</span>
+                    <span class="text-xs text-gray-400 bg-gray-100 rounded-full px-2">3</span>
+                </li>
+
+                <li class="flex items-center justify-between mb-2 text-gray-600">
+                    <span>Road trip list</span>
+                    <span class="text-xs text-gray-400 bg-gray-100 rounded-full px-2">6</span>
+                </li>
+            </ul>
+
+            <div class="bg-gray-200 w-50 rounded-full mt-4 flex items-center justify-between">
+                <button class="py-2 mx-4">+ Create new list</button>
+                <span class="text-xs text-gray-400 bg-gray-100 rounded-full px-2 mx-1">L</span>
+            </div>
+
+            <h2 class="text-lg font-bold mt-8 mb-4">Group</h2>
+            <div class="flex space-x-4">
+                <div class="bg-gray-200 rounded-md p-4 w-24 text-center">
+                    <span>Mobal Project</span>
+                </div>
+                <div class="bg-gray-200 rounded-md p-4 w-24 text-center">
+                    <span>Futur Project</span>
+                </div>
+            </div>
+            <div class="bg-gray-200 w-50 rounded-full mt-4 flex items-center justify-between">
+                <button class="py-2 mx-4">+ Create new group</button>
+                <span class="text-xs text-gray-400 bg-gray-100 rounded-full px-2 mx-1">G</span>
+            </div>
+        </aside>
+
+        <!--Main Content-->
+        <main class="flex-1 p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h1 class="text-2xl font-bold">Good Morning! 👋</h1>
+
+                <div class="flex items-center space-x-2 bg-white p-2 rounded-lg shadow-sm">
+                    <!-- Dropdown button -->
+                   
+                        <button class="flex items-center justify-start px-0 py-1.5 text-gray-700 rounded-lg hover:bg-gray-200 ml-5">
+                        <svg class="ml-0 w-4 h-6  bg-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" >
+                            <path  stroke-width="2" d="M19 9l-7 7-7-7" ></path>
+                        </svg>
+                        <span class="px-2">Today</span>
+                        </button>
+                    <!-- Menu button -->
+                    <button class="p-2 bg-gray-100 rounded-lg hover:bg-gray-200">
+                      <svg class="w-4 h-5 text-gray-700" stroke="currentColor">
+                        <path stroke-width="2" d="M4 6 h16 M4 12 h16 M4 18 h16"></path>
+                      </svg>
+                    </button>
+                </div>
+            </div>
+
+            <ul>
+                <!-- =-=-=-=-=-=---List 1=-=-=-=-=-=-->
+                <li class="flex items-center justify-between mb-4  bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-4">
+                        <span>Jogging 🏃</span>
+                            
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-400 bg-gray-100 px-3">04:00 - 07:30</span>
+                        <div class="flex flex-col items-center space-y-1">
+                            <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </li>
+                    
+                    <!--Trois points verticaux
+                     <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-400 bg-gray-100 px-3">04:00 - 07:30</span>
+                        <div class="flex flex-col items-center space-y-1">
+                            <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                        </div>-->
+                <!-- =-=-=-=-=-=---List 2=-=-=-=-=-=-->
+                <li class="flex items-center justify-between mb-4  bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-4">
+                        <span>Read a book 📚</span>           
+                    </div>
+                            
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-400 bg-gray-100 px-3">08:00 - 09:00</span>
+                        <div class="flex flex-col items-center space-y-1">
+                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                    </div>
+                </li>
+
+                <!-- =-=-=-=-=-=---List 4=-=-=-=-=-=-->
+                <li class="flex items-center justify-between mb-4  bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-4">
+                        <span>Wireframing new product</span>           
+                    </div>
+                            
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-400 bg-gray-100 px-3">09:00 - 11:00</span>
+                        <div class="flex flex-col items-center space-y-1">
+                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                    </div>
+                </li>
+                <!-- =-=-=-=-=-=---List 3=-=-=-=-=-=-->
+                <li class="flex items-center justify-between mb-4  bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-4">
+                        <span>Moodboard Landing Page</span>           
+                    </div>
+                            
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm text-gray-400 bg-gray-100 px-3">11:00 - 13:00</span>
+                        <div class="flex flex-col items-center space-y-1">
+                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+    </div>
+</body>
+</html>                        
